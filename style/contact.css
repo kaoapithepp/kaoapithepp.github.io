@@ -15,14 +15,15 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Mitr', sans-serif;
-    
+}
+
+h1 {
+    margin: 0px;
+    margin-bottom: 10px;
 }
 
 .head-section {
     padding: 40px;
-    background-color:#f9f9f9;
-    border: none;
-    border-bottom: 1px solid #ededed;
     /*box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.10);*/ 
 }
 
@@ -33,16 +34,14 @@ body {
     font-size: 2.3em;
     color: #242424;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    text-align: left;
 }
 
 .logo-image {
     width: 100px;
     max-width: 100%;
     display: flex;
-
+    /*filter: hue-rotate(320deg);*/
 }
 
 .logo span {
@@ -52,26 +51,59 @@ body {
     color: #4e4e4e;
 }
 
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 .describe-app {
     margin-top: 0px;
     color: #242424;
     display: flex;
-    justify-content: center;
-    text-align: center;
-    font-weight: 300;
+    text-align: left;
+    font-weight: 400;
     font-size: 1.2em;
     opacity: 0.8;
 }
 
-.button-set{
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.input-bar {
+    margin-top: 25px;
+    padding: 20px; 
 }
 
-.subscribe-but {
-    margin-right: 15px;
+input {
+    padding: 20px;
+    width: 100%;
+    max-width: 90%;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid #727272;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.07);
+    font-family: 'Mitr', sans-serif;
+    font-size: 1.2em;
+}
+
+input::placeholder{
+    opacity: 0.4;
+}
+
+input:focus{
+    transition: .5s;
+    border-bottom: 2px solid #FF6D00;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 0px;
+    outline: none !important;
+}
+
+button {
+    margin-top: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     color: white;
@@ -80,46 +112,31 @@ body {
     border: none;
     border-radius: 3px;
     transition: .3s;
+    text-align: center;
+    outline: none !important;
 }
 
-.subscribe-but:hover {
-    
+button:hover {
     transform: scale(1.1);
     cursor: pointer;
     background-color: #ff994b;
 }
 
-.subscribe-but:active{
+button:active{
     background-color: #974200;
 }
 
-.learnmore-but {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    color: #242424;
-    padding: 10px;
-    background-color: #ffffff;
-    border-radius: 3px;
-    border: 1px solid #ededed;
-    transition: .2s;
-}
-
-.learnmore-but:hover{
-    color: #4b4b4b;
-    cursor: pointer;
-    background-color: #f9f9f9;
-}
 
 /*Mobile Responsing*/
 @media only screen and (max-width: 600px){
 
-.head-section h1 {
-    font-size: 1.28em;
-}
-
-.describe-app {
-    display: block;
-    font-size: 0.9em;
-}
-
+    .head-section h1 {
+        font-size: 1.28em;
+    }
+    
+    .describe-app {
+        display: block;
+        font-size: 0.9em;
+    }
+    
 }
