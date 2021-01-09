@@ -80,6 +80,7 @@ body {
     border: none;
     border-radius: 3px;
     transition: .3s;
+    outline: none !important;
 }
 
 .subscribe-but:hover {
@@ -102,6 +103,7 @@ body {
     border-radius: 3px;
     border: 1px solid #ededed;
     transition: .2s;
+    outline: none !important;
 }
 
 .learnmore-but:hover{

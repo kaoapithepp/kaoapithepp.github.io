@@ -22,6 +22,21 @@ h1 {
     margin-bottom: 10px;
 }
 
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+#stay-tuned{
+    font-size: 4em;
+}
+
 .head-section {
     padding: 40px;
     /*box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.10);*/ 
@@ -53,10 +68,11 @@ h1 {
 
 .content {
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;*/
     width: 100%;
     max-width: 100%;
-    justify-content: space-evenly;
+    position: relative;
+    justify-content: center;
     align-items: center;
     position: fixed;
     top: 50%;
@@ -65,7 +81,7 @@ h1 {
 }
 
 .describe-app {
-    margin-top: 0px;
+    margin-top: 10px;
     color: #242424;
     display: flex;
     text-align: left;
@@ -75,11 +91,13 @@ h1 {
 }
 
 .input-bar {
-    margin-top: 25px;
-    padding: 20px; 
+    margin-top: 15px;
+    padding: 10px; 
 }
 
 input {
+    display: flex;
+    justify-content: center;
     padding: 20px;
     width: 100%;
     max-width: 90%;
@@ -88,7 +106,7 @@ input {
     border-bottom: 2px solid #727272;
     box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.07);
     font-family: 'Mitr', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 input::placeholder{
@@ -131,13 +149,43 @@ button:active{
 /*Mobile Responsing*/
 @media only screen and (max-width: 600px){
 
-    .head-section h1 {
-        font-size: 1.28em;
+    #stay-tuned {
+        font-size: 3em;
+        position: relative;
+        
+    }
+
+    h2 {
+        font-size: 1em;
+        position: relative;
+        max-width: 100%;
     }
     
     .describe-app {
+        position: relative;
+        max-width: 100%;
         display: block;
         font-size: 0.9em;
     }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    input {
+        
+    }
     
+}
+
+@media only screen and (max-width: 570px){
+    #stay-tuned {
+        font-size: 2em;
+        position: relative;
+    }
+
+    .content {
+        margin-top: 40px;
+        font-size: 90%;
+    }
 }
