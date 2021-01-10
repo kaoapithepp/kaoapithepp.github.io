@@ -17,7 +17,7 @@ body {
     font-family: 'Mitr', sans-serif;
 }
 
-h1 {
+.h1 {
     margin: 0px;
     margin-bottom: 10px;
 }
@@ -172,10 +172,6 @@ button:active{
         font-size: 0.9em;
     }
 
-    input {
-        
-    }
-    
 }
 
 @media only screen and (max-width: 570px){
