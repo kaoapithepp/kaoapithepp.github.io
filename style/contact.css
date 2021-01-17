@@ -145,6 +145,11 @@ button:active{
     background-color: #974200;
 }
 
+.display-result {
+    padding: 20px;
+    margin: 10px;
+    background-color: #242424;
+}
 
 /*Mobile Responsing*/
 @media only screen and (max-width: 600px){

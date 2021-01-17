@@ -24,13 +24,15 @@
                     <span class="describe-app">อดใจรออีกนิด! เราจะแจ้งคุณทันทีเมื่อเราพร้อม</span>
                     <div class="input-bar">
                         <p>Full Name</p>
-                        <input type="text" name="fname" placeholder="ใส่ชื่อ-นามสกุลของคุณที่นี่">
+                        <input id="name" type="text" name="fname" placeholder="ใส่ชื่อ-นามสกุลของคุณที่นี่">
                         <p>Email</p>
-                        <input type="text" name="email" placeholder="ใส่อีเมลของคุณที่นี่">
-                        <button class="but-pos">Send it</button>
+                        <input id="email" type="text" name="email" placeholder="ใส่อีเมลของคุณที่นี่">
+                        <button id="send-it" class="but-pos">Send it</button>
                     </div>
                 </div>
             </div>
         </div>
+    <script src= "https://smtpjs.com/v3/smtp.js"></script> 
+    <script src="../script/main.js"></script>
     </body>
 </html>
